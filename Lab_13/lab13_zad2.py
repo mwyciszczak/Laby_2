@@ -1,5 +1,6 @@
 lista_ksiazek = []
 
+
 class Ksiazka:
     def __init__(self, autor, tytul):
         self.autor = autor
@@ -14,6 +15,7 @@ class Ksiazka:
 
     def sortowanie(self):
         return sorted(lista_ksiazek, key=lambda Ksiazka: Ksiazka.autor)
+
 
 for x in range(4):
     autor = input("Podaj autora:")

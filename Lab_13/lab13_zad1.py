@@ -1,5 +1,6 @@
 import time
 
+
 class Samochod:
     def __init__(self, marka, model, przebieg, kolor, rodzaj):
         self.marka = marka
@@ -30,9 +31,9 @@ class Samochod:
         return "Samochód rodzaju {} stoi".format(self.rodzaj)
 
     def otworz_bagaznik(self, status):
-        if status == True:
+        if status:
             return "Samochód modelu {} ma otwarty bagażnik".format(self.model)
-        elif status == False:
+        elif not status:
             return "Samochód modelu {} ma zamknięty bagażnik".format(self.model)
 
 
@@ -46,4 +47,3 @@ print(samochod3.stop(45))
 print(samochod5.otworz_bagaznik(True))
 print(samochod1.jedz_prosto(45))
 print(samochod1.skrec("lewo"))
-

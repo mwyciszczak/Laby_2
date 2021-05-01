@@ -1,5 +1,7 @@
-#polecenie kończy się z metodami oraz parametrami
+#polecenie kończy się "z metodami oraz parametrami"
 lista = []
+
+
 class Smartphone:
     def __init__(self, firma, model, przekatna, ram, pojemnosc_baterii, kolor):
         self.firma = firma
